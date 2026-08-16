@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sushant Chat</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- LEFT SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <header class="sidebar-header">
+
+            <h2>Sushant Chat</h2>
+
+            <div class="header-icons">
+                <button>＋</button>
+                <button>⋮</button>
+            </div>
+
+        </header>
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+            🔍
+            <input
+                type="text"
+                id="search"
+                placeholder="Search or start new chat"
+            >
+        </div>
+
+        <!-- CHAT LIST -->
+
+        <div class="chat-list">
+
+            <div class="chat active">
+
+                <div class="avatar">R</div>
+
+                <div class="chat-info">
+                    <div class="chat-top">
+                        <strong>Rahul</strong>
+                        <span>12:42 PM</span>
+                    </div>
+
+                    <p>Hey bro, what's up?</p>
+                </div>
+
+            </div>
+
+
+            <div class="chat">
+
+                <div class="avatar">A</div>
+
+                <div class="chat-info">
+                    <div class="chat-top">
+                        <strong>Alex</strong>
+                        <span>11:20 AM</span>
+                    </div>
+
+                    <p>See you tomorrow!</p>
+                </div>
+
+            </div>
+
+
+            <div class="chat">
+
+                <div class="avatar">P</div>
+
+                <div class="chat-info">
+                    <div class="chat-top">
+                        <strong>Priya</strong>
+                        <span>Yesterday</span>
+                    </div>
+
+                    <p>Check this project 🚀</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CHAT AREA -->
+
+    <main class="chat-area">
+
+        <!-- CHAT HEADER -->
+
+        <header class="chat-header">
+
+            <div class="avatar small">R</div>
+
+            <div>
+                <strong>Rahul</strong>
+                <p>online</p>
+            </div>
+
+        </header>
+
+
+        <!-- MESSAGES -->
+
+        <section class="messages" id="messages">
+
+            <div class="message received">
+                Hey bro 👋
+            </div>
+
+            <div class="message received">
+                How are you?
+            </div>
+
+            <div class="message sent">
+                I'm good! 🚀
+            </div>
+
+            <div class="message sent">
+                Working on my new project.
+            </div>
+
+        </section>
+
+
+        <!-- MESSAGE INPUT -->
+
+        <footer class="message-input">
+
+            <button class="icon-button">😊</button>
+
+            <button class="icon-button">📎</button>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type a message"
+            >
+
+            <button
+                class="send-button"
+                onclick="sendMessage()"
+            >
+                ➤
+            </button>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
